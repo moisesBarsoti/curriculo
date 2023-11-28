@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        75deg,
+        #060c21,
+        #1b244b
+    );
+    width: 100%;
+    color: #fff;
+}
+
+
+/* Logo 'MB' */
+
+#logo {
+    position: absolute;
+    margin-top: 30px;
+}
+
+
+/* Menu de Navegação */
+
+header nav ul#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 41rem;
+    margin-left: 60rem;
+    margin-top: 44px;
+}
+
+
+header nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+header nav ul li a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+
+/* Section de Inicio */
+
+section#inicio h1 {
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: -57rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+section#inicio p {
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: -57rem;
+    font-size: 17.5px;
+}
+
+
+/* Ícones */
+
+section#inicio ul#icones {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 200px;    
+}
+
+
+section#inicio ul#icones li a {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 31rem;
+    margin-left: -48rem;
+}
+
+
+section#inicio ul#icones li a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+
+/* Section de Sobre Mim */
+
+section#sobreMim {
+
+}

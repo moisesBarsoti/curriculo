@@ -9,13 +9,13 @@
 <body>
     <header>
         <div id="logo">
-            <h1 title="Logo de Moisés Barsoti"><span style="color: #0eb;">MB</span></h1>
+            <h1 title="Logo de Moisés Barsoti">MB</h1>
         </div>
         <nav>
             <ul id="menu">
-                <li title="Clique aqui para ir ao início"><a href="inicio">Início</a></li>
-                <li title="Clique aqui para ir sobre mim"><a href="sobreMim">Sobre mim</a></li>
-                <li title="Clique aqui para ir em experiências"><a href="">Experiências</a></li>
+                <li title="Clique aqui para ir sobre mim"><a href="">Início</a></li>
+                <li title="Clique aqui para ir sobre mim"><a href="#sobreMim">Sobre mim</a></li>
+                <li title="Clique aqui para ir em experiências"><a href="">Especialidades</a></li>
                 <li title="Clique aqui para ver projetos"><a href="">Projetos</a></li>
             </ul>
         </nav>              
@@ -25,17 +25,45 @@
         <section id="inicio">
             <h1></h1> <!--Esse texto do h1 está no JS e está em uma variável chamada 'h1DeApresentacao' -->
             <p>Sou um programador Front-end em busca de me tornar um programador FULLSTACK ! <br>
-               Para entrar em contato, somente clique nos ícones: </p>
+               Para entrar em contato comigo, somente selecione alguma das opções abaixo: </p>
                 <ul id="icones">
-                    <li><a href="" style="color: green;" title="Ver whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                    <li><a href="" style="color: pink;" title="Ver instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="" style="color: #0eb;" title="Ver linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <a href=""></a>
+                    <li>
+                        <a href="" title="Ver whatsapp">
+                            <span class="tituloDosIcones">Whatsapp</span>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="Ver instagram" id="corDoInstagram">
+                            <span class="tituloDosIcones">Instagram</span>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="Ver linkedin" id="corDoLinkedin">
+                            <span class="tituloDosIcones">Linkedin</span>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
                 </ul>
+                    
+                <div id="fotoMoises">
+                    <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti">
+                </div>
         </section>
 
+
         <section id="sobreMim">
-            
+            <div id="fotoMoises2">
+                <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ex repudiandae omnis? Fugit 
+                    assumenda, ratione voluptates laboriosam non provident.
+                    Corporis mollitia obcaecati quos eaque magni eligendi necessitatibus sit quisquam quas!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ex repudiandae omnis? Fugit 
+                    assumenda, ratione voluptates laboriosam non provident.
+                    Corporis mollitia obcaecati quos eaque magni eligendi necessitatibus sit quisquam quas!
+                </p>
+            </div>
         </section>
     </main>
 
@@ -47,7 +75,7 @@
 
     <!-- Link do JS -->
 
-    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 </html>

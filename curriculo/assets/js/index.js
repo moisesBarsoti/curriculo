@@ -1,6 +1,6 @@
 // Estilização
 const h1DeApresentacao = document.querySelector('#inicio h1');
-const textoDeApresentacao = 'Olá, Eu sou Moisés Barsoti';
+const textoDeApresentacao = 'Olá, Eu sou Moisés Barsoti!';
 const intervalo = 95;
 
 function escreverLetras(h1DeApresentacao, textoDeApresentacao, intervalo) {

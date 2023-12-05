@@ -23,11 +23,22 @@ body {
 }
 
 
+/* Animações */
+
+@keyframes rotacao {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* Logo 'MB' */
 
-#logo {
+#logo h1{
     position: absolute;
     margin-top: 30px;
+    color: #0eb; 
+    font-family: italic;
 }
 
 
@@ -38,13 +49,15 @@ header nav ul#menu {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 41rem;
+    width: 40rem;
     margin-left: 60rem;
     margin-top: 44px;
 }
 
 
 header nav ul li a {
+    overflow: hidden;
+    position: fixed;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -53,9 +66,21 @@ header nav ul li a {
 }
 
 
-header nav ul li a:hover {
-    border-bottom: solid 1px #fff;
+header nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffa832;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+
+header nav ul li a:hover::after {
+    width: 100%;
+    transition: 1s;
+} 
 
 
 /* Section de Inicio */
@@ -79,15 +104,18 @@ section#inicio p {
 }
 
 
-/* Ícones */
+/* Ícones/ Links de opções para contato */
 
 section#inicio ul#icones {
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 200px;    
+    height: 300px;
+    margin-top: 31rem;
+    margin-left: -59rem;
 }
 
 
@@ -95,18 +123,114 @@ section#inicio ul#icones li a {
     position: absolute;
     color: #fff;
     font-size: 30px;
-    margin-top: 31rem;
-    margin-left: -48rem;
+    border: solid 1px #fff;
+    padding-right: 16rem;
+    padding-top: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0eb;
 }
 
 
 section#inicio ul#icones li a:hover {
-    border-bottom: solid 1px #fff;
+    border: solid 1px #0eb;
+    background-color: rgba(0, 238, 186, 0.3);
+    transition: 1s;
+}
+
+
+ion-icon {
+    margin-left: 120px;
+}
+
+
+.tituloDosIcones {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 160px;
+}
+
+
+section#inicio ul#icones li a#corDoInstagram:hover {
+    border: solid 1px #ffa832;
+    background: #ffa832;
+    transition: 1s;
+}
+
+
+section#inicio ul#icones li a#corDoLinkedin:hover {
+    border: solid 1px #3ce;
+    background: #3ce;
+    transition: 1s;
+}
+
+
+/* Imagem da foto */
+
+#fotoMoises img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 400px;
+    margin-top: 13rem;
+    margin-left: 20rem;
+    overflow: hidden;
+}
+
+
+#fotoMoises::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 13rem;
+    margin-left: 20rem;
+    border-radius: 243px;
+    background: linear-gradient(
+        180deg,
+        #0eb,
+        #ffa832
+    );
+    box-shadow: 0 0 750px #0eb;
+    animation: rotacao 7s linear infinite;
 }
 
 
 /* Section de Sobre Mim */
 
 section#sobreMim {
+    width: 100%;
+    height: 61rem;
+    margin-top: 58rem;
+    background: linear-gradient(
+        75deg,
+        #1b244b,
+        #060c21
+    );
+}
 
+
+section#sobreMim #fotoMoises2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20rem;
+}
+
+
+#fotoMoises2 img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#fotoMoises2 p {
+    position: absolute;
+    width: 300px;
+    margin-left: 32rem;
 }

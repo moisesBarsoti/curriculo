@@ -70,7 +70,7 @@ header nav ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: #ffa832;
+    background-color: #0eb;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -172,8 +172,8 @@ section#inicio ul#icones li a#corDoLinkedin:hover {
     width: 500px;
     height: 500px;
     border-radius: 400px;
-    margin-top: 13rem;
-    margin-left: 20rem;
+    margin-top: 13.3rem;
+    margin-left: 20.3rem;
     overflow: hidden;
 }
 
@@ -181,11 +181,11 @@ section#inicio ul#icones li a#corDoLinkedin:hover {
 #fotoMoises::before {
     content: "";
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 510px;
+    height: 510px;
     margin-top: 13rem;
     margin-left: 20rem;
-    border-radius: 243px;
+    border-radius: 400px;
     background: linear-gradient(
         180deg,
         #0eb,
@@ -194,6 +194,7 @@ section#inicio ul#icones li a#corDoLinkedin:hover {
     box-shadow: 0 0 750px #0eb;
     animation: rotacao 7s linear infinite;
 }
+
 
 
 /* Section de Sobre Mim */
@@ -210,27 +211,80 @@ section#sobreMim {
 }
 
 
+/* Segunda foto da seção de sobre mim */
+
 section#sobreMim #fotoMoises2 {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -20rem;
+    margin-left: -67rem;
+    position: absolute;
+    margin-top: -10rem;
 }
 
 
 #fotoMoises2 img {
-    position: absolute;
+    position: relative;
     width: 200px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 100px;
+    margin-left: -12.6rem;
+    overflow: hidden;
 }
 
 
-#fotoMoises2 p {
+#fotoMoises2::before {
+    content: "";
+    width: 205px;
+    height: 205px;
+    margin-left: 14rem;
+    border-radius: 243px;
+    background: linear-gradient(
+        180deg,
+        #0eb,
+        #ffa832
+    );
+    animation: rotacao 7s linear infinite;
+}
+
+
+/* Titulo da foto "Sobre Mim' */
+
+section#sobreMim h2 {
+    font-size: 50px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+
+/* Titulo dos textos */
+
+ul#titulosDeSobreMim {
     position: absolute;
-    width: 300px;
-    margin-left: 32rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    margin-left: -59.5rem;
+    margin-top: 35.5rem;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0eb;
+    box-shadow: 0 0 25px #0eb;
+    transition: 1s;
 }
+
+
+/* Texto dos titulos */
+
+ul#titulosDeSobreMim  li p {
+    width: 400px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+

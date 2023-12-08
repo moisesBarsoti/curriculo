@@ -329,14 +329,38 @@ section#especialidades h3 {
 
 /* H3 dos titulos das skils */
 
-section#especialidades ul#tituloDasSkils  {
+section#especialidades ul#tituloDasSkils {
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin-top: 6rem;
-    margin-left: 20rem;
+    flex-direction: row;
+    margin-top: 16rem;
+    margin-left: -2rem;
     font-size: 45px;
-    height: 750px;
+    width: 60rem;
+    color: #0eb;
+}
+
+
+/* Subtitulo das skils e textos das skils */
+
+section#especialidades ul#tituloDasSkils h5 {
+    color: #ffa832;
+    font-size: 20px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+section#especialidades ul#tituloDasSkils p {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 2px;
+    width: 300px;
 }

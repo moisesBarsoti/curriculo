@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        75deg,
+        #060c21,
+        #1b244b
+    );
+    width: 100%;
+    color: #fff;
+}
+
+
+/* Animações */
+
+@keyframes rotacao {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Logo 'MB' */
+
+#logo h1{
+    position: absolute;
+    margin-top: 30px;
+    color: #0eb; 
+    font-family: italic;
+}
+
+
+/* Menu de Navegação */
+
+header nav ul#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 40rem;
+    margin-left: 60rem;
+    margin-top: 44px;
+}
+
+
+header nav ul li a {
+    overflow: hidden;
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+header nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #0eb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+header nav ul li a:hover::after {
+    width: 100%;
+    transition: 1s;
+} 
+
+
+/* Section de Inicio */
+
+section#inicio h1 {
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: -57rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+section#inicio p {
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: -57rem;
+    font-size: 17.5px;
+}
+
+
+/* Ícones/ Links de opções para contato */
+
+section#inicio ul#icones {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;    
+    height: 300px;
+    margin-top: 31rem;
+    margin-left: -59rem;
+}
+
+
+section#inicio ul#icones li a {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    border: solid 1px #fff;
+    padding-right: 16rem;
+    padding-top: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0eb;
+}
+
+
+section#inicio ul#icones li a:hover {
+    border: solid 1px #0eb;
+    background-color: rgba(0, 238, 186, 0.3);
+    transition: 1s;
+}
+
+
+ion-icon {
+    margin-left: 120px;
+}
+
+
+.tituloDosIcones {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 160px;
+}
+
+
+section#inicio ul#icones li a#corDoInstagram:hover {
+    border: solid 1px #ffa832;
+    background: #ffa832;
+    transition: 1s;
+}
+
+
+section#inicio ul#icones li a#corDoLinkedin:hover {
+    border: solid 1px #3ce;
+    background: #3ce;
+    transition: 1s;
+}
+
+
+/* Imagem da foto */
+
+#fotoMoises img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 400px;
+    margin-top: 13.3rem;
+    margin-left: 20.3rem;
+    overflow: hidden;
+}
+
+
+#fotoMoises::before {
+    content: "";
+    position: absolute;
+    width: 510px;
+    height: 510px;
+    margin-top: 13rem;
+    margin-left: 20rem;
+    border-radius: 400px;
+    background: linear-gradient(
+        180deg,
+        #0eb,
+        #ffa832
+    );
+    box-shadow: 0 0 750px #0eb;
+    animation: rotacao 7s linear infinite;
+}
+
+
+
+/* Section de Sobre Mim */
+
+section#sobreMim {
+    width: 100%;
+    height: 60rem;
+    margin-top: 58rem;
+    background: linear-gradient(
+        75deg,
+        #1b244b,
+        #060c21
+    );
+}
+
+
+/* Segunda foto da seção de sobre mim */
+
+section#sobreMim #fotoMoises2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -67rem;
+    position: absolute;
+    margin-top: 15rem;
+}
+
+
+#fotoMoises2 img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: -12.6rem;
+    overflow: hidden;
+}
+
+
+#fotoMoises2::before {
+    content: "";
+    width: 205px;
+    height: 205px;
+    margin-left: 14rem;
+    border-radius: 243px;
+    background: linear-gradient(
+        180deg,
+        #0eb,
+        #ffa832
+    );
+    animation: rotacao 7s linear infinite;
+}
+
+
+/* Titulo da foto "Sobre Mim' */
+
+section#sobreMim h2 {
+    font-size: 50px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+
+/* Titulo dos textos */
+
+ul#titulosDeSobreMim {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    margin-left: -59.5rem;
+    margin-top: 34.5rem;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0eb;
+    box-shadow: 0 0 25px #0eb;
+    transition: 1s;
+}
+
+
+/* Texto dos titulos */
+
+ul#titulosDeSobreMim  li p {
+    width: 400px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+
+/* Section de Especialidades */
+
+section#especialidades {
+    width: 100%;
+    height: 60rem;
+    margin-top: 6rem;
+    background: linear-gradient(
+        75deg,
+        #1b244b,
+        #060c21
+    );
+}
+
+
+/* Imagem do personagem no computador */
+
+section#especialidades img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    margin-left: -45rem;
+    width: 400px;
+    height: 400px;
+}
+
+
+/* H3 de especialidades */
+
+section#especialidades h3 {
+    position: absolute;
+    margin-top: 16rem;
+    margin-left: -43rem;
+    font-size: 50px;
+}
+
+
+/* H3 dos titulos das skils */
+
+section#especialidades ul#tituloDasSkils {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 16rem;
+    margin-left: -2rem;
+    font-size: 45px;
+    width: 60rem;
+    color: #0eb;
+}
+
+
+/* Subtitulo das skils e textos das skils */
+
+section#especialidades ul#tituloDasSkils h5 {
+    color: #ffa832;
+    font-size: 20px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+section#especialidades ul#tituloDasSkils p {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 2px;
+    width: 300px;
+}

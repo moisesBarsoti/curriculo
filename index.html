@@ -3,132 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo de Moisés Barsoti</title>
+    <title>Portifólio de Moisés Barsoti</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <h1 title="Logo de Moisés Barsoti">MB</h1>
+
+<header>
+    <div id="logo">
+        <h1 title="Logo de Moisés Barsoti">MB</h1>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li title="Clique aqui para ir ao início"><a href="">Início</a></li>
+            <li title="Clique aqui para ir sobre mim"><a href="#sobreMim">Sobre mim</a></li>
+            <li title="Clique aqui para ir em experiências"><a href="#especialidades">Especialidades</a></li>
+            <li title="Clique aqui para ver projetos"><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>              
+</header>
+
+<main>
+
+<section id="inicio">
+    <h1></h1> <!--Esse texto do h1 está no JS e está em uma variável chamada 'h1DeApresentacao' -->
+    <p>Sou um programador Front-end em busca de me tornar um programador FULLSTACK ! <br>
+        Para entrar em contato comigo, somente selecione alguma das opções abaixo: </p>
+        <ul id="icones">
+            <li>
+                <a href="" title="Ver whatsapp">
+                    <span class="tituloDosIcones">Whatsapp</span>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="" title="Ver instagram" id="corDoInstagram">
+                    <span class="tituloDosIcones">Instagram</span>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="" title="Ver linkedin" id="corDoLinkedin">
+                    <span class="tituloDosIcones">Linkedin</span>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+        </ul>
+            
+        <div id="fotoMoises">
+            <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti">
         </div>
-        <nav>
-            <ul id="menu">
-                <li title="Clique aqui para ir ao início"><a href="">Início</a></li>
-                <li title="Clique aqui para ir sobre mim"><a href="#sobreMim">Sobre mim</a></li>
-                <li title="Clique aqui para ir em experiências"><a href="#especialidades">Especialidades</a></li>
-                <li title="Clique aqui para ver projetos"><a href="">Projetos</a></li>
-            </ul>
-        </nav>              
-    </header>
+</section>
 
-    <main>
-        <section id="inicio">
-            <h1></h1> <!--Esse texto do h1 está no JS e está em uma variável chamada 'h1DeApresentacao' -->
-            <p>Sou um programador Front-end em busca de me tornar um programador FULLSTACK ! <br>
-               Para entrar em contato comigo, somente selecione alguma das opções abaixo: </p>
-                <ul id="icones">
-                    <li>
-                        <a href="" title="Ver whatsapp">
-                            <span class="tituloDosIcones">Whatsapp</span>
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Ver instagram" id="corDoInstagram">
-                            <span class="tituloDosIcones">Instagram</span>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Ver linkedin" id="corDoLinkedin">
-                            <span class="tituloDosIcones">Linkedin</span>
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-                    
-                <div id="fotoMoises">
-                    <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti">
-                </div>
-        </section>
+<!-- Sobre Mim -->
 
-        <!-- Sobre Mim -->
+<section id="sobreMim">
+    <div id="fotoMoises2">
+        <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti" loading="lazy">
+        <h2>Sobre mim</h2>
+    </div>
+    <div>
+        <ul id="titulosDeSobreMim">
+            <li>
+                Quem sou eu ?
+                <p>Olá! Me chamo Moisés Barsoti, nascido em São Paulo no dia 03/07/2005, sou um desenvolvedor Front-end
+                    em busca de aprender cada vez mais na área da programação, para que eu seja um programador Fullstack.
+                </p>
+            </li>
 
-        <section id="sobreMim">
-            <div id="fotoMoises2">
-                <img src="assets/img/fotoMoises3.jpeg" alt="Nesta foto apresenta Moisés Barsoti" loading="lazy">
-                <h2>Sobre mim</h2>
+            <li>
+                Início na Programação
+                <p>Comecei aos estudos de TI no dia 10/04/23 no curso de desenvolvimento de sistemas da Proz de São Miguel, e 
+                    desde então venho me desenvolvendo para me tornar um programador diligente, e comecei a fazer um novo curso online
+                    na Udemy no dia 20/11/23.
+                </p>
+            </li>
+
+            <li>
+                Objetivos
+                <p>Estou em busca de novos desafios para que eu possa me tornar o melhor desenvolvedor e para que eu consiga me tornar
+                    um programador Fullstack.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Especialidades -->
+
+<section id="especialidades">
+  <h3>Especialidades</h3>
+    <img src="assets/img/imagemDoPersonagem.png" alt="Nesta imagem contém um personagem fictício em um computador" loading="lazy">
+        <ul id="tituloDasSkils">
+            <li>
+                <h4>Soft Skils</h4>
+                <h5>Liderança: 
+                    <p>Tenho experiências em lideranças com trabalhos de escola, cursos e sendo capitão em partidas de volei.</p>
+                </h5>
+                <h5>Comunicativo: 
+                    <p>Consigo comunicar com todo mundo facilmente e ajudar quem estiver necessitado.</p>
+                </h5>
+                <h5>Trabalho em equipe: 
+                    <p>Consigo trabalhar tanto em equipe quanto sozinho.</p>
+                </h5>
+                <h5>Proativo: 
+                    <p>Consigo resolver problemas com facilidade e anteceder problemas</p>
+                </h5>
+            </li>
+            <li>
+                <h4>Hard Skils</h4>
+                <h5>Front-End: 
+                    <p>HTML, CSS, JavaScript, Frameworks, 
+                        Figma,Bootstrap, Responsividade, UX, UI, WCAG ,QA.</p>
+                </h5>
+                <h5>Back-End: 
+                    <p>PHP, XAMPP</p>
+                </h5>
+                <h5>Administração de websites: 
+                    <p>Estruturas de websites, Plataforma de marketing, Layout e Desing digital</p>
+                </h5>
+                <h5>Sistemas inteligentes: 
+                    <p>IA, Deep Learning, Big Data, Machine Learning</p>
+                </h5>
+            </li>
+        </ul>
+</section>
+
+<!-- Projetos -->
+
+<section id="projetos">
+    <h6>Projetos</h6>
+        <div id="posicaoDosContainerDeCima">
+            <!-- Projeto da calculadora de IMC -->
+            <div class="container">
+                <a href="https://moisesbarsoti.github.io/Calculadora-IMC/" title="Clique para ver projeto" target="_blank">
+                    <ul>
+                      <li>
+                        <img src="assets/img/imgTabelaIMC.jpeg" alt="Imagem de um projeto de calculadora de IMC" loading="lazy">
+                      </li>
+
+                      <li>
+                        <p>Nesse projeto ele irá calcular o IMC e esse site foi desenvolvido em HTML,CSS e JS.</p>
+                      </li>
+                      
+                      <li>
+                        <button title="Clique para ver projeto">Ver projeto</button>
+                      </li>
+                   </ul>
+                </a>
             </div>
-            <div>
-                <ul id="titulosDeSobreMim">
-                    <li>
-                        Quem sou eu ?
-                        <p>Olá! Me chamo Moisés Barsoti, nascido em São Paulo no dia 03/07/2005, sou um desenvolvedor Front-end
-                            em busca de aprender cada vez mais na área da programação, para que eu seja um programador Fullstack.
-                        </p>
-                    </li>
+            <!-- Projeto do cronômetro -->
+            <div class="container">
+                <a href="https://moisesbarsoti.github.io/Cron-metro/" title="Clique para ver projeto" target="_blank">
+                    <ul>
+                      <li>
+                        <img src="assets/img/imgDoCronometro.jpeg" alt="Imagem de um projeto de calculadora de IMC" loading="lazy">
+                      </li>
 
-                    <li>
-                        Início na Programação
-                        <p>Comecei aos estudos de TI no dia 10/04/23 no curso de desenvolvimento de sistemas da Proz de São Miguel, e 
-                            desde então venho me desenvolvendo para me tornar um programador diligente, e comecei a fazer um novo curso online
-                            na Udemy no dia 20/11/23.
+                      <li>
+                        <p>Nesse projeto ele irá cronometrar o tempo assim que você clica em inicia e esse site foi 
+                            desenvolvido em HTML,CSS e JS.
                         </p>
-                    </li>
-
-                    <li>
-                        Objetivos
-                        <p>Estou em busca de novos desafios para que eu possa me tornar o melhor desenvolvedor e para que eu consiga me tornar
-                            um programador Fullstack.
-                        </p>
-                    </li>
-                </ul>
+                      </li>
+                      
+                      <li>
+                        <button title="Clique para ver projeto">Ver projeto</button>
+                      </li>
+                   </ul>
+                </a>
             </div>
-        </section>
-
-        <!-- Especialidades -->
-
-        <section id="especialidades">
-            <h3>Especialidades</h3>
-            <img src="assets/img/imagemDoPersonagem.png" alt="">
-                <div>
-                    <ul id="tituloDasSkils">
-                        <li>
-                            <h4>Soft Skils</h4>
-                            <h5>Liderança: 
-                                <p>Tenho experiências em lideranças com trabalhos de escola, cursos e sendo capitão em partidas de volei. </p>
-                            </h5>
-                            <h5>Comunicativo: 
-                                <p>Consigo comunicar com todo mundo facilmente e ajudar quem estiver necessitado.</p>
-                            </h5>
-                            <h5>Trabalho em equipe: 
-                                <p>Consigo trabalhar tanto em equipe quanto sozinho.</p>
-                            </h5>
-                            <h5>Proativo: 
-                                <p>Consigo resolver problemas com facilidade e anteceder problemas</p>
-                            </h5>
-                        </li>
-                        <li>
-                            <h4>Hard Skils</h4>
-                            <h5>Front-End: 
-                                <p class="hardskils">HTML, CSS, JavaScript, Frameworks, 
-                                    Figma,Bootstrap, Responsividade, UX, UI, WCAG
-                                     ,QA.</p>
-                            </h5>
-                            <h5>Back-End: 
-                                <p class="hardskils">PHP, XAMPP</p>
-                            </h5>
-                            <h5>Administração de websites: 
-                                <p>Estruturas de websites, Plataforma de marketing, Layout e Desing digital</p>
-                            </h5>
-                            <h5>Sistemas inteligentes: 
-                                <p class="hardskils">IA, Deep Learning, Big Data, Machine Learning</p>
-                            </h5>
-                        </li>
-                    </ul>
+            <!-- Projeto Petlife -->
+            <div class="container">
+                <div class="container">
+                    <a href="https://moisesbarsoti.github.io/PetLife/" title="Clique para ver projeto" target="_blank">
+                        <ul>
+                          <li>
+                            <img src="assets/img/imgDoPetlife.jpeg" alt="Imagem de um projeto de calculadora de IMC" loading="lazy">
+                          </li>
+    
+                          <li>
+                            <p>Nesse projeto ele irá retratar sobre um petShop e a qualidade de vida do seu cachorro 
+                                o tempo assim que você clica em inicia e esse site foi 
+                                desenvolvido em HTML,CSS e JS.
+                            </p>
+                          </li>
+                          
+                          <li>
+                            <button title="Clique para ver projeto">Ver projeto</button>
+                          </li>
+                       </ul>
+                    </a>
                 </div>
-        </section>
-    </main>
+            </div>
+        </div>
+</section>
+
+</main>
 
 
     <!-- Script dos ícones -->

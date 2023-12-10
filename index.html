@@ -14,7 +14,7 @@
     </div>
     <nav>
         <ul id="menu">
-            <li title="Clique aqui para ir ao início"><a href="">Início</a></li>
+            <li title="Clique aqui para ir ao início"><a href="#">Início</a></li>
             <li title="Clique aqui para ir sobre mim"><a href="#sobreMim">Sobre mim</a></li>
             <li title="Clique aqui para ir em experiências"><a href="#especialidades">Especialidades</a></li>
             <li title="Clique aqui para ver projetos"><a href="#projetos">Projetos</a></li>
@@ -200,13 +200,30 @@
 </main>
 
 <footer>
-    <div id="copyright">
+
+    <section id="email">
+        <form action="https://formsubmit.co/ajax/moises.barsot2@gmail.com" method="POST">
+            <!-- Nome -->
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required autofocus>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <!-- Mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+            <!-- Botão -->
+            <button type="submit" title="Clique aqui para enviar o email">Enviar</button>
+        </form>
+    </section>
+
+    <!-- <div id="copyright">
         <p>Desenvolvido por:
             <a href="https://github.com/moisesBarsoti" target="_blank" title="Ver github do desenvolvedor">
             Moisés Barsoti
             </a>
         </p>
-    </div>
+    </div> -->
 
 </footer>
 

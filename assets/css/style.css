@@ -502,6 +502,17 @@ footer section#email {
 }
 
 
+footer section#email h6 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: -6.5rem;
+    font-size: 50px;
+}
+
+
 footer section#email form {
     position: absolute;
     display: flex;
@@ -509,7 +520,7 @@ footer section#email form {
     align-items: center;
     flex-direction: column;
     height: 250px;
-    margin-top: 20rem;
+    margin-top: 25rem;
     margin-left: -15rem;
     min-height: 40vh;
 }

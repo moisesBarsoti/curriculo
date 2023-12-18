@@ -96,3 +96,29 @@
         color: #0eb;
     }
 }
+
+
+/* max-width: 1600 e max-heigth: 900 */
+
+@media  (max-height: 900px) {
+    /* h1 titulo "Olá eu sou Moisés Barsoti" */
+
+    section#inicio h1 {
+        position: absolute;
+        margin-top: 20rem;
+        margin-left: -46rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 50px;
+    } 
+
+    /* p texto abaiho do h1  */
+
+    section#inicio p {
+        position: absolute;
+        margin-top: 25rem;
+        margin-left: -46rem;
+        font-size: 17.5px;
+    }
+}
